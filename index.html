@@ -222,14 +222,64 @@
             </div>
         </section>
         <br>
-        <div class="cta-section-medium">
-            <div class="cta-info">
-                <h2 class="cta-heading">Work with us today</h2>
-                <p>You may not trust us now but you will when you see our work</p>
+
+        <div class="contact-form" style="grid-area: box-4">
+                    <h2>Get in touch with us</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input
+                            type="hidden"
+                            name="access_key" 
+                            value="db48950b-8006-4555-ad05-d6742ffa7712"
+                        >
+
+
+                        <label for="name">Name*</label>
+                        <input
+                            id="name"
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            required
+                        >
+
+                        <label for="email">Email*</label>
+                        <input
+                            id="email"
+                            type="email" 
+                            name="email" 
+                            placeholder="Email"  
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Please enter a valid email"
+                            required
+                        >
+
+
+                        <label for="phone">Phone*</label>
+                        <input 
+                            id="phone"
+                            type="tel" 
+                            name="phone" 
+                            placeholder="Phone" 
+                            pattern="^08[35679](?:\d{7}|\s\d{3}\s\d{4})$"
+                            title="Enter a number like 0877777733 or 087 777 7733"
+                            required
+                        >
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+                        <input 
+                            type="checkbox" 
+                            name="botcheck" 
+                            class="hidden" 
+                            style="display: none;"
+                        >
+
+                        <div class="h-captcha" data-captcha="true"></div>
+
+                        <input type="submit" value="Submit" class="cta-btn">
+                    </form>
+                </div>
                 <br>
-                <a href="" class="cta-btn">Work with us</a>
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -272,5 +322,6 @@
             </p>
         </div>
     </footer>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
