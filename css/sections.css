@@ -47,10 +47,14 @@
 .about-image-container{
     height: 80%;
     width: 80%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
 }
 
 .about-image{
-    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cta-section-large{
@@ -171,7 +175,7 @@
 .hero-1{
     width: 100%;
     height: 600px;
-    background-image: url("../image.jpg");
+    background-image: url("../assets/optimized/domestic-800.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -206,7 +210,10 @@
     content: "";
     position: absolute;
     inset: -4px;
-    background: url("../assets/hero2-image.jpg") center / cover no-repeat;
+    background: image-set(
+        url("../assets/optimized/hero2-900.jpg") 1x,
+        url("../assets/optimized/hero2-1600.jpg") 2x
+    ) center / cover no-repeat;
     filter: blur(3px);
 }
 
@@ -248,7 +255,7 @@
 
 .service-section{
     text-align: center;
-    /* background: color-mix(in srgb, var(--primary-color) 30%, transparent); */
+    background: color-mix(in srgb, var(--primary-color) 30%, transparent);
 
 }
 
