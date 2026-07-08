@@ -57,6 +57,16 @@
     object-fit: cover;
 }
 
+.about-us-index{
+    padding: var(--space-lg) 0;
+    min-height: fit-content;
+}
+
+.AUI-text{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .cta-section-large{
     height: 500px;
     width: 100%;

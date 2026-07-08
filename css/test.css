@@ -243,6 +243,10 @@ a{
     margin-top: var(--space-sm);
 }
 
+.highlight-text{
+    color: var(--primary-color);
+}
+
 @media (max-width: 820px) {
     
     .hamburger{
