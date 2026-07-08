@@ -274,6 +274,10 @@ a{
         display: none;
     }
 
+    .sidebar{
+        padding-top: 5rem;
+    }
+
     .sidebarBtn{
         display: flex;
         z-index: 9;

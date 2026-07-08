@@ -380,6 +380,17 @@
         gap: 2rem;
         justify-items: normal;
     }
+
+    .footerLink,.footerList{
+        font-size: var(--fs-200);
+        line-height: 1.4;
+    }
+
+    .footerLink{
+        min-height: 44px;
+        padding-block: 0.5rem;
+        align-items: center;
+    }
     
     .hero-1{
         width: 100%;
