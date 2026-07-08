@@ -261,7 +261,7 @@
 
 .service-container{
     min-height: 500px;
-    min-width: 95%;
+    min-width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-md);
