@@ -64,7 +64,7 @@
 .cta-section-medium{
     height: 250px;
     width: 100%;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +197,6 @@
     overflow: hidden;
     width: 100%;
     height: 500px;
-    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
 
@@ -207,8 +206,8 @@
     content: "";
     position: absolute;
     inset: -4px;
-    background: url("../image.jpg") center / cover no-repeat;
-    filter: blur(4px);
+    background: url("../assets/hero2-image.jpg") center / cover no-repeat;
+    filter: blur(3px);
 }
 
 .hero-2-information{
@@ -219,40 +218,43 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+
 }
 
 .info-container{
     /* background: color-mix(in srgb, var(--primary-color) 20%, transparent); */
+    width: fit-content;
+    max-width: 90vw;
     border-radius: var(--space-sm);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    max-width: 24rem;
     text-align: center;
     gap: var(--space-xs);
     color: white;
 }
 
 .info-container > p{
-    font-size: var(--fs-200);
-    width: 100%;
+    font-size: var(--fs-400);
+    max-width: 75%;
 }
 
 .info-container > h1{
     font-size: 2.5rem;
+    /* white-space: nowrap; */
 }
 
 .service-section{
     text-align: center;
-    background: color-mix(in srgb, var(--primary-color) 50%, transparent);
+    /* background: color-mix(in srgb, var(--primary-color) 30%, transparent); */
 
 }
 
 .service-container{
     min-height: 500px;
-    /* min-width: 100%; */
+    min-width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-md);
@@ -266,6 +268,8 @@
 .service-container > .card{
     height: 80%;
     width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 .service-container2{
